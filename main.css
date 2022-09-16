@@ -12,9 +12,12 @@ body {
 
     font-family: sandoll-jebi2, sans-serif;
 
-font-weight: 300;
+	font-weight: 300;
 
-font-style: normal;
+	font-style: normal;
+
+	word-break: keep-all;
+	font-size: 1.2em;
 }
 p {
 	line-height: 1.6;
@@ -26,15 +29,20 @@ a {
 .container {
 	/* iPhone 가로 스크롤 방지 */
 	overflow-x: hidden;
+	max-width: 1500px;
+	margin: 0 auto;
+	height: 100%;
 }
 .global-nav {
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 10;
-	width: 100%;
+	width: 97%;
 	height: 44px;
 	padding: 0 1rem;
+	
+	
 }
 
 .global-nav-links,
@@ -49,9 +57,11 @@ a {
 	justify-content: space-between;
 }
 
-.imb-container{
-    background-color: grey;
+.global-nav-links :nth-child(1){
+	font-weight: 700;
 }
+
+
 
 .scroll-section{
 	text-align: center;
@@ -59,15 +69,199 @@ a {
 
 #scroll-section-0{
 	position: relative;
-	padding-top: 5vh;
+	top:10vh;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 }
 
 #scroll-section-0 > .img-container{
 	width: 100%;
-	height: 80%;
+	height: auto;
+}
+
+.a {
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+.c , .e, .g, .i {
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+.d, .f, .h, .j{
+	padding-left: 15vw;
+	padding-right: 15vw;
+}
+
+#scroll-section-1{
+	position: relative;
+	margin-top: 30vh;
+	width: 100%;
+	height: 100%;
+}
+
+#scroll-section-1 > .img-container {
+	position: relative;
+	margin-top: 10vh;
+	width: 100%;
+	height: 30vh;
 	background-color: lightgray;
+}
+
+#scroll-section-2{
+	position: relative;
+	top:20vh;
+	width: 100%;
+	height: 100%;
+}
+
+#scroll-section-2 > .non-interaction-container-1 > .img-container{
+	background-color: lightgray;
+	height: 60vh;
+}
+
+#scroll-section-2 > .non-interaction-container-2 > .img-container{
+	background-color: lightgray;
+	height: 30vh;
+}
+
+#scroll-section-2 > :nth-child(1){
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.k{
+	padding-right: 5vw;
+}
+
+.l{
+	padding-left: 5vw;
+}
+
+.non-interaction-container-1{
+	display: grid;
+	grid-template-columns: 0.8fr 1.2fr;
+	gap: 5%;
+	position: relative;
+	margin-top:5vh;
+}
+
+.non-interaction-container-2{
+	display: grid;
+	grid-template-columns: 1.4fr 0.6fr;
+	gap: 10%;
+	position: relative;
+	margin-top:15vh;
+}
+
+#scroll-section-2 > .non-interaction-container-1 > .text-container :nth-child(1),
+#scroll-section-2 > .non-interaction-container-2 > .text-container :nth-child(1) {
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+#scroll-section-3{
+	position: relative;
+	margin-top:40vh;
+	width: 100%;
+	height: 100%;
+}
+
+#scroll-section-3 > :nth-child(1){
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+#scroll-section-3 > .grid-container > .text-container :nth-child(1){
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+#scroll-section-3 > :nth-child(3){
+	margin-top: 10vh;
+}
+
+#scroll-section-3 > .non-interaction-container > .img-container {
+
+	margin: 0 auto;
+	gap: 10%;
+	width: 15%;
+	
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 5%;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+
+.grid-container > .text-container{
+	padding-top: 15%;
+}
+
+.grid-container > .img-container{
+	background-color: lightgray;
+	height: 40vh;
+}
+
+.gwang-ju{
+	margin-top: 10vh;
+	height: 100%;
+}
+
+.gwang-ju > :nth-child(1){
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+.gwang-ju > .grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1%;
+}
+
+.gwang-ju > .grid-container > .img-container {
+	background-color: lightgray;
+	height: 30vh;
+}
+
+#scroll-section-4{
+	position: relative;
+	margin-top: 30vh;
+}
+
+#scroll-section-4 > :nth-child(1) {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+#scroll-section-5{
+	position: relative;
+	margin-top: 30vh;
+}
+
+#scroll-section-5 > p {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+#scroll-section-5 > .img-container {
+	width: 100;
+	height: 30vh;
+	background-color: lightgray;
+	
+}
+
+#footer{
+	position: relative;
+	height: 30vh;
+}
+
+.img{
+	width: 100%;
 }
 
 
